@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Gidole&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Estilos generales */
+body {
+    font-family: 'Gidole';
+    margin: 0;
+    padding: 0;
+    background: #A1FFCE;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* Encabezado */
+header {
+    max-width: 80%;
+    margin: auto;
+    background-color: #025c5e;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    margin-bottom: 40px;
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 2%;
+
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Contenedor principal */
+main {
+    max-width: 70%;
+    margin: auto;
+    padding: 5%;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Estilos de los títulos */
+h2 {
+    color: #0077cc;
+    border-bottom: 2px solid #0077cc;
+    padding-bottom: 5px;
+}
+
+/* Código en bloque */
+pre {
+    
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-size: 16px;
+}
+
+/* Código en línea */
+code {
+    background-color: #eee;
+    padding: 3px 5px;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+}
+
+/* Imágenes */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 10px 2px;
+    border-radius: 5px;
+    
+}
+
+/* Pie de página */
+footer {
+    max-width: 80%;
+    margin: auto;
+    text-align: left;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #025c5e;
+    color: white;
+    border-radius:10px 10px 0 0;
+}
+
+footer p {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+footer a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+
+    header{
+        max-width: 90%;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    main {
+        max-width: 80%;
+        padding: 4%;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    pre {
+        font-size: 10px;
+    }
+
+    img {
+        max-width: 90%;
+        margin: 10px auto;
+    }
+
+    footer {
+        max-width: 85%;
+        padding: 10px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+}

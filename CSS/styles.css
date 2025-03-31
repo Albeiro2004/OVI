@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Gidole&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: 'Gidole';
+    margin: 0;
+    padding: 0;  
+    background-color: #f4f4f4;  
+    background: #67B26F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #4ca2cd, #67B26F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #4ca2cd, #67B26F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.container {  
+    display: grid;
+    grid-template-columns: 0.9fr 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.1fr 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "principal principal principal principal principal principal principal principal principal principal principal principal"
+      "principal principal principal principal principal principal principal principal principal principal principal principal"
+      "secciones secciones contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido"
+      "secciones secciones contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido"
+      "secciones secciones contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido"
+      "secciones secciones contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido"
+      "secciones secciones contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido"
+      "secciones secciones contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido"
+      "secciones secciones contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido"
+      "secciones secciones contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido"
+      "secciones secciones contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido"
+      "pie pie pie pie pie pie pie pie pie pie pie pie"
+      "pie pie pie pie pie pie pie pie pie pie pie pie"
+      ;
+      gap: 0px;
+      max-width: 80%;
+      margin: auto;
+      background:whitesmoke;
+      padding: 0.7%;
+      box-shadow: 0 0 20px rgb(0, 0, 0, 0.2);
+      border-radius: 2%;
+      
+  }
+  
+  .principal { 
+    grid-area: principal;
+    text-align: center; 
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='100%' height='150' preserveAspectRatio='none' viewBox='0 0 1436 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1020%26quot%3b)' fill='none'%3e%3crect width='1436' height='560' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M0 355.89L10 289.98L20 254.12L30 232.01L40 180.97L50 119.73L60 183.39L70 132.89L80 182.28L90 159.52L100 222.82L110 226.35L120 278.18L130 222.43L140 242.97L150 299.19L160 252.75L170 200.54L180 265.71L190 237.05L200 303.01L210 324.47L220 295.63L230 283.17L240 349.73L250 284.44L260 234.51L270 237.43L280 251.78L290 275.74L300 225.55L310 270.47L320 338.77L330 322.31L340 312.72L350 253.94L360 316.87L370 280.9L380 340.18L390 349.56L400 414.1L410 444.59L420 467.28L430 511.6L440 508.1L450 484.31L460 428.03L470 461.11L480 438.86L490 464.04L500 519.23L510 548.11L520 479.56L530 519.14L540 513.02L550 467.59L560 482.15L570 433.28L580 385.55L590 374.6L600 390.76L610 359.31L620 359.58L630 307.68L640 349.16L650 368.1L660 376.81L670 411.17L680 468.91L690 463.47L700 442.33L710 495.18L720 460.97L730 522.39L740 481.71L750 508.19L760 454.51L770 491.28L780 476.54L790 453.47L800 470L810 446.98L820 505.71L830 553.81L840 544.64L850 489.02L860 555.54L870 514.91L880 473.03L890 446.96L900 503.98L910 518.26L920 553.69L930 527.96L940 531.21L950 476.16L960 435.77L970 453.04L980 391.79L990 365.1L1000 338.99L1010 333.52L1020 371.82L1030 362.9L1040 380.79L1050 364.11L1060 362.98L1070 318.31L1080 279.12L1090 304.52L1100 247.53L1110 200.08L1120 169.04L1130 206.35L1140 271.17L1150 331.58L1160 361.75L1170 370.28L1180 377.68L1190 336.2L1200 309.63L1210 378.13L1220 405.77L1230 349.02L1240 409.16L1250 388.99L1260 345.27L1270 407.99L1280 390.23L1290 426.3L1300 406.21L1310 430.74L1320 497.52L1330 438.42L1340 424.6L1350 464.04L1360 435.1L1370 471.49L1380 528.4L1390 462.65L1400 487.17L1410 459.63L1420 397.23L1430 368.63L1440 349.61' stroke='rgba(15%2c 157%2c 88%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M0 355.89L10 289.98L20 254.12L30 232.01L40 180.97L50 119.73L60 183.39L70 132.89L80 182.28L90 159.52L100 222.82L110 226.35L120 278.18L130 222.43L140 242.97L150 299.19L160 252.75L170 200.54L180 265.71L190 237.05L200 303.01L210 324.47L220 295.63L230 283.17L240 349.73L250 284.44L260 234.51L270 237.43L280 251.78L290 275.74L300 225.55L310 270.47L320 338.77L330 322.31L340 312.72L350 253.94L360 316.87L370 280.9L380 340.18L390 349.56L400 414.1L410 444.59L420 467.28L430 511.6L440 508.1L450 484.31L460 428.03L470 461.11L480 438.86L490 464.04L500 519.23L510 548.11L520 479.56L530 519.14L540 513.02L550 467.59L560 482.15L570 433.28L580 385.55L590 374.6L600 390.76L610 359.31L620 359.58L630 307.68L640 349.16L650 368.1L660 376.81L670 411.17L680 468.91L690 463.47L700 442.33L710 495.18L720 460.97L730 522.39L740 481.71L750 508.19L760 454.51L770 491.28L780 476.54L790 453.47L800 470L810 446.98L820 505.71L830 553.81L840 544.64L850 489.02L860 555.54L870 514.91L880 473.03L890 446.96L900 503.98L910 518.26L920 553.69L930 527.96L940 531.21L950 476.16L960 435.77L970 453.04L980 391.79L990 365.1L1000 338.99L1010 333.52L1020 371.82L1030 362.9L1040 380.79L1050 364.11L1060 362.98L1070 318.31L1080 279.12L1090 304.52L1100 247.53L1110 200.08L1120 169.04L1130 206.35L1140 271.17L1150 331.58L1160 361.75L1170 370.28L1180 377.68L1190 336.2L1200 309.63L1210 378.13L1220 405.77L1230 349.02L1240 409.16L1250 388.99L1260 345.27L1270 407.99L1280 390.23L1290 426.3L1300 406.21L1310 430.74L1320 497.52L1330 438.42L1340 424.6L1350 464.04L1360 435.1L1370 471.49L1380 528.4L1390 462.65L1400 487.17L1410 459.63L1420 397.23L1430 368.63L1440 349.61L1440 560L0 560z' fill='url(%26quot%3b%23SvgjsLinearGradient1021%26quot%3b)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1020'%3e%3crect width='1436' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='50%25' y1='0%25' x2='50%25' y2='100%25' id='SvgjsLinearGradient1021'%3e%3cstop stop-opacity='0.65' stop-color='rgba(15%2c 157%2c 88%2c 1)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='%2355efa4' offset='0.8'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+    color: rgb(50, 223, 44);  
+    padding: 2%;
+    border-radius: 10px 10px 10px 0;
+    }
+
+    .principal h2{
+        margin-top: -2%;
+    }
+  
+        /* Contenedor principal del menú (conserva tus estilos originales) */
+.secciones {
+    grid-area: secciones;
+    background: #025c5e;
+    padding: 5%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Nav y lista principal */
+.secciones nav {
+    width: 100%;
+    height: 100%;
+}
+
+.secciones nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Items de la lista */
+.secciones nav ul li {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    margin: 8px 0;
+}
+
+/* --- Estilos para BOTONES PRINCIPALES --- */
+.menu-btn{
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+    width: 80%;
+    padding: 15px 0;
+    border: none;
+    border-radius: 50%;
+    background-color: #179eb9;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0 auto;
+    display: block;
+}
+
+.menu-btn:hover {
+    background: #94d2bd;
+    color: #005f73;
+    transform: scale(1.05);
+}
+
+.secciones nav ul li a {
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+    width: 80%;
+    padding: 15px 0;
+    border: none;
+    border-radius: 50%;
+    background-color: #179eb9;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: auto;
+    display: block;
+    text-decoration: none;
+}
+
+
+.secciones nav ul li a:hover {
+    background: #94d2bd;
+    color: #005f73;
+    transform: scale(1.05);
+}
+
+/* --- SUBMENÚS DESPLEGABLES (.menu1) --- */
+.menu1 {
+    width: 150px !important;
+    display: none; /* Oculto por defecto */
+    position: absolute;
+    left: 160%;
+    top: -100%;
+    transform: translateX(-50%);
+    background: #9c9e9e56;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1000;
+    padding: 8px 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    margin: 2px;
+}
+
+/* Items del submenú */
+.menu1 a {
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin: 4px 10px !important;
+    border-radius: 10px !important;
+    transition: all 0.2s ease;
+    font-size: 12px;
+}
+
+.menu1 a:hover {
+    background: #94d2bd;
+    color: #005f73;
+    transform: translateX(5px);
+}
+
+/* Mostrar submenú al hacer hover en el botón padre */
+li:hover .menu1 {
+    display: block;
+    opacity: 1;
+}
+
+/* --- Efecto para ítem activo (opcional) --- */
+.active {
+    background: #94d2bd !important;
+    color: #005f73 !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+  
+
+        .contenido { 
+            margin-left: -2%;
+            background-color: whitesmoke;
+            grid-area: contenido; 
+            padding: 5%;
+            font-size: 1.2rem;
+    
+            }
+
+    #imagen{
+        width: 45%;
+        height: 35vh;
+        float: right;
+        margin: 1rem;
+        border-radius: 5%;
+        margin-right: -5%;
+        margin-left: 5%;
+        border: #005f73 solid 1px;
+    }
+
+    .contenido h2 ,.contenido h1{
+        text-align: center;
+        margin-top: 0;
+        color: #005f73;
+    }
+
+    .contenido h2{
+        font-size: 1.2rem;
+    }
+
+    .contenido p{
+        text-align: justify;
+        
+    }
+  
+    footer{
+    text-align: center;
+    }
+
+    .pie {
+        grid-area: pie;
+        background: #005f73;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2vw;
+        border-radius: 0 10px 10px 10px;
+    }
+    
+    .pie footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+    }
+    
+    .iconos {
+        display: flex;
+        justify-content: center; /* Asegura que los iconos estén alineados */
+        gap: 70%; /* Espacio entre cada ícono */
+    }
+    
+    .pie img {
+        height: 5vh;
+    }
+    
+    .tooltip {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        border-radius: 5px;
+        padding: 1%;
+        position: absolute;
+        bottom: 125%;  /* Lo coloca justo arriba del icono */
+        left: 50%;  /* Lo alinea en el centro horizontalmente */
+        transform: translateX(-50%); /* Ajusta la posición para que quede bien centrado */ 
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+    
+    .tooltip .tooltiptext::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #333 transparent transparent transparent;
+    }
+    
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    @media (max-width: 768px) {
+        .container {
+            padding: 5%;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(12, auto);           
+        }
+    
+        .principal {
+            max-height: 16vh;
+            width: 100%;
+        }
+    
+        .secciones {
+            background: #025c5e;
+            padding: 5%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .secciones nav ul li a , .secciones nav ul li button{
+        margin-left: -1%;
+        font-size: 9px;
+        }
+        .menu1 {  
+            left: 30vw;
+            top: -5vh;    
+        }
+    
+        .contenido {
+            font-size: 14px;
+            padding: 10px;
+            width: 100%;
+        }
+    
+        .pie {
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            
+        }
+
+        #imagen{
+        width: 60vw;
+        height: 25vh;
+        margin-right: -12.5%;
+        }
+
+            
+    }
+    

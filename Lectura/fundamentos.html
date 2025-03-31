@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conceptos Avanzados de Bases de Datos</title>
+    <link rel="stylesheet" href="fundam.css">
+</head>
+<body>
+
+    <header>
+        <h1>Fundamentos BBDD</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Creación de una Base de Datos</h2>
+            <p>Antes de trabajar con una base de datos, es necesario crearla y definir sus tablas junto con sus atributos.</p>
+            <h3>Crear una Base de Datos</h3>
+            <p>Para crear una base de datos en SQL, usamos el siguiente comando:</p>
+            <pre><code>CREATE DATABASE Tienda;</code></pre>
+            <h3>Crear Tablas y Definir Atributos</h3>
+            <p>Después de crear la base de datos, debemos definir las tablas y sus atributos.</p>
+            <pre><code>CREATE TABLE Clientes (
+    ID INT PRIMARY KEY,
+    Nombre VARCHAR(100),
+    Email VARCHAR(100)
+);
+
+CREATE TABLE Productos (
+    ID INT PRIMARY KEY,
+    Nombre VARCHAR(100),
+    Precio DECIMAL(10,2)
+);
+
+CREATE TABLE Pedidos (
+    ID INT PRIMARY KEY,
+    ClienteID INT,
+    Fecha DATE,
+    FOREIGN KEY (ClienteID) REFERENCES Clientes(ID)
+);</code></pre>
+        </section>
+
+        <section>
+            <h2>Claves Primarias y Foráneas</h2>
+            <p>Las claves primarias y foráneas son fundamentales para la integridad de los datos en bases de datos relacionales.</p>
+            <h3>Clave Primaria</h3>
+            <p>Una clave primaria es un identificador único para cada fila en una tabla. No puede contener valores nulos ni repetidos.</p>
+            <pre><code>CREATE TABLE Clientes (
+    ID INT PRIMARY KEY,
+    Nombre VARCHAR(100),
+    Email VARCHAR(100)
+);</code></pre>
+            <h3>Clave Foránea</h3>
+            <p>Una clave foránea es un campo en una tabla que hace referencia a la clave primaria de otra tabla.</p>
+            <pre><code>CREATE TABLE Pedidos (
+    ID INT PRIMARY KEY,
+    ClienteID INT,
+    FOREIGN KEY (ClienteID) REFERENCES Clientes(ID)
+);</code></pre>
+        </section>
+
+        <section>
+            <h2>Normalización</h2>
+            <p>El proceso de normalización se usa para minimizar la redundancia y mejorar la integridad de los datos.</p>
+            <h3>Ejemplo de Normalización</h3>
+            <p>Supongamos una tabla sin normalizar:</p>
+            <pre><code>Pedidos(ID, Cliente, Dirección, Producto, Precio, Cantidad)</code></pre>
+            <p>Después de aplicar la normalización:</p>
+            <pre><code>Clientes(ID, Nombre, Dirección)
+Pedidos(ID, ClienteID, ProductoID, Cantidad)
+Productos(ID, Nombre, Precio)</code></pre>
+        </section>
+
+        <section>
+            <h2>Lenguajes de Consulta</h2>
+            <p>Los lenguajes de consulta en bases de datos se dividen en diferentes categorías según su propósito.</p>
+            <h3>Lenguaje de Definición de Datos (DDL)</h3>
+            <p>Usado para definir la estructura de la base de datos.</p>
+            <pre><code>CREATE TABLE Productos (
+    ID INT PRIMARY KEY,
+    Nombre VARCHAR(100),
+    Precio DECIMAL(10,2)
+);</code></pre>
+            <h3>Lenguaje de Manipulación de Datos (DML)</h3>
+            <p>Permite la inserción, actualización y eliminación de datos.</p>
+            <pre><code>INSERT INTO Productos (ID, Nombre, Precio) VALUES (1, 'Laptop', 1200.50);
+UPDATE Productos SET Precio = 1150.00 WHERE ID = 1;
+DELETE FROM Productos WHERE ID = 1;</code></pre>
+            <h3>Lenguaje de Control de Datos (DCL)</h3>
+            <p>Gestiona permisos y accesos a la base de datos.</p>
+            <pre><code>GRANT SELECT ON Productos TO Usuario1;
+REVOKE SELECT ON Productos FROM Usuario1;</code></pre>
+            <h3>Lenguaje de Control de Transacciones (TCL)</h3>
+            <p>Maneja la ejecución de transacciones.</p>
+            <pre><code>START TRANSACTION;
+UPDATE Productos SET Precio = 900.00 WHERE ID = 1;
+COMMIT;</code></pre>
+        </section>
+
+        <section>
+            <h2>Índices en Bases de Datos</h2>
+            <p>Los índices mejoran el rendimiento de las consultas en bases de datos al acelerar la búsqueda de datos.</p>
+            <h3>Ejemplo de Creación de Índice</h3>
+            <pre><code>CREATE INDEX idx_producto_nombre ON Productos(Nombre);</code></pre>
+        </section>
+    </main>
+    <footer>
+        <p>Referencia: <br><br>
+            MikeRayMSFT. (n.d.). Tutorial de T-SQL: Creación y consulta de objetos de base de datos - SQL Server. Microsoft.com. Retrieved March 30, 2025, from
+            <a href="https://learn.microsoft.com/es-es/sql/t-sql/lesson-1-creating-database-objects?view=sql-server-ver16">enlace</a>
+        </p>
+    </footer>
+</body>
+</html>

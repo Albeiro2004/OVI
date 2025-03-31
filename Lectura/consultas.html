@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultas Básicas en Bases de Datos</title>
+    <link rel="stylesheet" href="consultas.css">
+</head>
+<body>
+
+    <header>
+        <h1>Consultas BBDD</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Consultas Básicas en SQL</h2>
+            <p>Las consultas en bases de datos permiten recuperar, insertar, actualizar y eliminar datos de una manera eficiente.</p>
+            <img src="images/imagen.png" alt="Ejemplo de consulta en SQL" width="600">
+        </section>
+
+        <section>
+            <h2>SELECT - Consultar Datos</h2>
+            <p>El comando <code>SELECT</code> se usa para obtener información de una tabla.</p>
+            <pre><code>SELECT * FROM Clientes;</code></pre>
+            <p>Para seleccionar columnas específicas:</p>
+            <pre><code>SELECT Nombre, Email FROM Clientes;</code></pre>
+        </section>
+
+        <section>
+            <h2>INSERT - Agregar Datos</h2>
+            <p>Para insertar un nuevo registro en la tabla:</p>
+            <pre><code>INSERT INTO Clientes (ID, Nombre, Email) 
+VALUES (1, 'Juan Pérez', 'juan@example.com');</code></pre>
+            <img src="images/image1.png" alt="Ejemplo de inserción en SQL" width="600">
+        </section>
+
+        <section>
+            <h2>UPDATE - Modificar Datos</h2>
+            <p>Para actualizar un dato en la tabla:</p>
+            <pre><code>UPDATE Clientes 
+SET Email = 'nuevoemail@example.com' 
+WHERE ID = 1;</code></pre>
+        </section>
+
+        <section>
+            <h2>DELETE - Eliminar Datos</h2>
+            <p>Para eliminar un registro de la tabla:</p>
+            <pre><code>DELETE FROM Clientes WHERE ID = 1;</code></pre>
+            <img src="images/image.png" alt="Ejemplo de eliminación en SQL" width="600">
+        </section>
+    </main>
+    <footer>
+        <p>Referencia: <br>
+             CRUD: la base de la gestión de datos. (n.d.). IONOS Digital Guide. Retrieved March 31, 2025, from <br>
+            <a href="https://www.ionos.com/es-us/digitalguide/paginas-web/desarrollo-web/crud-las-principales-operaciones-de-bases-de-datos/" target="_blank">
+                https://www.ionos.com/es-us/digitalguide/paginas-web/desarrollo-web/crud-las-principales-operaciones-de-bases-de-datos/
+            </a>
+        </p>
+    </footer>
+</body>
+</html>

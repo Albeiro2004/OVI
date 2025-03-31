@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="actividades.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Actividades</title>
+</head>
+<body>
+
+    <header>
+        <h1>Actividades interactivas</h1>
+    </header>
+    
+    <div class="container">
+        <!-- ACTIVIDAD 1: Opción múltiple -->
+        <h2>Actividad 1: Opción Múltiple</h2>
+        <form>
+            <div class="question">
+                <p><b>1. ¿Qué lenguaje se usa para bases de datos?</b></p>
+                <label><input type="radio" name="q1"> HTML</label>
+                <label><input type="radio" name="q1"> Python</label>
+                <label><input type="radio" name="q1" required> SQL <span class="respuesta">✔ Correcto</span></label>
+            </div>
+
+            <div class="question">
+                <p><b>2. ¿Qué comando elimina una tabla en SQL?</b></p>
+                <label><input type="radio" name="q2"> REMOVE TABLE</label>
+                <label><input type="radio" name="q2"> DELETE TABLE</label>
+                <label><input type="radio" name="q2" required>DROP TABLE <span class="respuesta">✔ Correcto</span></label>
+            </div>
+
+            <div class="question">
+                <p><b>3. ¿Qué tipo de base de datos organiza datos en tablas?</b></p>
+                <label><input type="radio" name="q3"> NoSQL</label>
+                <label><input type="radio" name="q3"> Jerárquica</label>
+                <label><input type="radio" name="q3" required>Relacional <span class="respuesta">✔ Correcto</span></label>
+            </div>
+
+            </div>
+            <!-- ACTIVIDAD 2: Relacionar conceptos -->
+            <br>
+            <div class="container">
+            <h2>Actividad 2: Relacionar Conceptos</h2>
+
+            <div class="question">
+                <p><b>1. Clave primaria</b></p>
+                <select required>
+                    <option value="">Selecciona una opción</option>
+                    <option>Define la estructura de la base de datos</option>
+                    <option value="correcto">Identifica de manera única cada fila en una tabla</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <p><b>2. Normalización</b></p>
+                <select required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="correcto">Proceso para reducir redundancia en los datos</option>
+                    <option>Elimina bases de datos</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <p><b>3. SQL</b></p>
+                <select required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="correcto">Lenguaje para manejar bases de datos</option>
+                    <option>Una herramienta de diseño web</option>
+                </select>
+            </div>
+            </div>
+            
+            <br>
+            <div class="container">
+            <!-- ACTIVIDAD 3: Completar código SQL -->
+            <h2>Actividad 3: Completa la Consulta SQL</h2>
+
+            <div class="question">
+                <p><b>1. Consulta para obtener todos los registros de la tabla "Clientes":</b></p>
+                <select required>
+                    <option value="">Selecciona una opción</option>
+                    <option>DELETE * FROM Clientes;</option>
+                    <option value="correcto">SELECT * FROM Clientes;</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <p><b>2. Para insertar un nuevo cliente, se usa:</b></p>
+                <select required>
+                    <option value="">Selecciona una opción</option>
+                    <option>CREATE TABLE Clientes;</option>
+                    <option value="correcto">INSERT INTO Clientes VALUES (...);</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <p><b>3. Para eliminar un cliente con ID=5, se usa:</b></p>
+                <select required>
+                    <option value="">Selecciona una opción</option>
+                    <option>REMOVE Cliente WHERE ID=5;</option>
+                    <option value="correcto">DELETE FROM Clientes WHERE ID=5;</option>
+                </select>
+            </div>
+
+            <button class="btn" type="submit">Enviar Todo</button>
+        </form>
+    </div>
+
+</body>
+</html>

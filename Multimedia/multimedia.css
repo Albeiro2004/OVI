@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Gidole&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Estilos generales */
+body {
+    font-family: 'Gidole';
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Encabezado */
+header {
+    background-color: #0077cc;
+    color: white;
+    padding: 20px;
+    font-size: 18px;
+    max-height: 10vh;
+    border-radius: 0 0 10px 10px;
+}
+
+/* Secciones */
+section {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos */
+h1 {
+    margin: auto;
+    color: #ffffff;
+}
+
+h2 {
+    margin: auto;
+    color: #0077cc;
+}
+
+/* Estilo para videos */
+iframe {
+    margin-top: 10px;
+    width: 100%;
+    max-width: 560px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px 10px 0 0;
+}

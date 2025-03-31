@@ -1,0 +1,82 @@
+<!-- Lectura 1: Introducción a las Bases de Datos -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecturas sobre Bases de Datos</title>
+    <link rel="stylesheet" href="tipo_BBDD.css">
+</head>
+<body>
+    <main>
+        <section>
+            <h2>Tipos de Bases de Datos</h2>
+            <p>Existen diversos tipos de bases de datos, cada uno de ellos enfocados a funciones específicas. A continuación, se presentan los principales tipos:</p>
+            
+            
+
+            <h3>Base de datos relacional</h3>
+            <img src="images/TIP_BBDD.jpg" alt="Img: Tipo de BBDD">
+            <p>Las bases de datos relacionales son las más comunes en la actualidad. Consisten en una serie de contenedores de información denominados tablas, en los que se almacenan registros. Los registros serían las filas de las tablas mientras que sus campos de éstos serían las columnas.</p>
+            <p><strong>Ejemplo:</strong> MySQL, PostgreSQL, Microsoft SQL Server.</p>
+            <p><strong>Ventajas:</strong>
+                <ul class="ul">
+                    <li>Alta integridad de datos y consistencia.</li>
+                    <li>Soporte para SQL, un lenguaje estándar y poderoso.</li>
+                    <li>Relaciones bien definidas entre los datos.</li>
+                </ul>
+            </p>
+            
+            <h3>Base de datos distribuida</h3>
+            <p>Las bases de datos distribuidas son aquellas en las que la información no reside en un único servidor de bases de datos, sino que existen diversos servidores, a menudo en redes distintas, que mantienen una porción de los datos.</p>
+            <p><strong>Ejemplo:</strong> Apache Cassandra, Google Spanner.</p>
+            <p><strong>Ventajas:</strong>
+                <ul>
+                    <li>Mayor disponibilidad y tolerancia a fallos.</li>
+                    <li>Escalabilidad horizontal.</li>
+                    <li>Acceso rápido a los datos desde múltiples ubicaciones.</li>
+                </ul>
+            </p>
+            
+            <h3>Base de datos orientada a objetos</h3>
+            <p>Son un modelo de bases de datos en las que la información se almacena mediante objetos. Los objetos son conjuntos heterogéneos de datos, tan complejos como sea necesario para modelizar aquella información que se necesite.</p>
+            <p><strong>Ejemplo:</strong> db4o, ObjectDB.</p>
+            <p><strong>Ventajas:</strong>
+                <ul>
+                    <li>Compatibilidad con lenguajes de programación orientados a objetos.</li>
+                    <li>Soporta estructuras de datos complejas.</li>
+                    <li>Mayor eficiencia en ciertas aplicaciones específicas como diseño CAD y simulaciones.</li>
+                </ul>
+            </p>
+            
+            <h3>Base de datos gráfica</h3>
+            <p>Son un tipo de bases de datos donde se guardan datos y sus relaciones. Sin embargo, las relaciones en este modelo de base de datos son ciudadanos de primer nivel, ya que se almacenan tal cual en la base de datos y no mediante índices como en las relacionales.</p>
+            <p><strong>Ejemplo:</strong> Neo4j, ArangoDB.</p>
+            <p><strong>Ventajas:</strong>
+                <ul>
+                    <li>Optimización para consultas con relaciones complejas.</li>
+                    <li>Ideal para redes sociales y motores de recomendación.</li>
+                    <li>Mayor flexibilidad en la estructura de datos.</li>
+                </ul>
+            </p>
+            
+            <h3>Base de datos NoSQL</h3>
+            <p>Las bases de datos NoSQL (Not only SQL) son aquellas en las que no se usan tablas sino colecciones de elementos. Los elementos almacenados en las colecciones pueden ser heterogéneos, permitiendo una mayor flexibilidad y velocidad de recuperación de la información.</p>
+            <p><strong>Ejemplo:</strong> MongoDB, CouchDB.</p>
+            <p><strong>Ventajas:</strong>
+                <ul>
+                    <li>Alto rendimiento en consultas.</li>
+                    <li>Alta escalabilidad horizontal.</li>
+                    <li>Ideal para big data y aplicaciones en la nube.</li>
+                </ul>
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>Referencia: <br>
+             Tipos de bases de datos que existen. (n.d.). Arsys. Retrieved March 30, 2025, from <br>
+            <a href="https://www.arsys.es/blog/tipos-de-bases-de-datos-que-existen" target="_blank">https://www.arsys.es/blog/tipos-de-bases-de-datos-que-existen</a>
+        </p>
+    </footer>
+</body>
+</html>
