@@ -3,7 +3,7 @@
 /* Estilos generales */
 body {
     font-family: 'Gidole';
-    background-color: #f4f4f4;
+    background-color: lightblue;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -11,13 +11,12 @@ body {
 }
 
 header {
-    background: #0073e6;
+    background: #263a4e;
     color: white;
     padding: 15px 0;
     font-size: 20px;
     max-height: 20vh;
     border-radius: 0 0 10px 10px;
-
 }
 
 h1 {
@@ -27,9 +26,8 @@ h1 {
 .container {
     background: white;
     width: 80%;
-    max-width: 600px;
     margin: 20px auto;
-    padding: 20px;
+    padding: 5%;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
